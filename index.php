@@ -26,6 +26,18 @@
 .navbar-default {
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 5px rgba(0, 0, 0, 0.075);
 }
+body {
+	background-color:#eee;
+}
+.main {
+	margin-left:10%;
+	margin-right:10%;
+	margin-top: 45px;
+	margin-bottom: -11px;
+	min-height:2000px;
+	background-color:rgba(255, 255, 255, 0.64);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 5px rgba(0, 0, 0, 0.075);
+}
 </style>
 </head>
 
@@ -37,7 +49,7 @@
       <a class="navbar-brand" href="#">CeCe</a> </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
@@ -58,6 +70,8 @@
     <!--/.nav-collapse --> 
   </div>
 </div>
+<div class="main">
+<h1>Hello Wordl!</h1>
 </div>
 </body>
 </html>

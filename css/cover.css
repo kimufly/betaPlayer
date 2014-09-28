@@ -76,7 +76,7 @@ position: absolute;
 text-align: center;
 font-size: 11px;
 line-height: 12px;
-margin-left: 65%;
+margin-left: 63.5%;
 margin-top: 0.46%;
 }
 
@@ -92,8 +92,9 @@ margin-top: 0.46%;
 	left: 5px;
 }
 .sound {
-position: absolute;
-left: 76%;
+	position: absolute;
+	margin-left: 74%;
+	margin-top: -0.1%;
 }
 .soundbtn {
 	position: relative;
@@ -115,8 +116,8 @@ position: absolute;
 cursor: pointer;
 width: 7%;
 height: 6px;
-margin-left: 78.5%;
-margin-top: 0.9%;
+margin-left: 76.5%;
+margin-top: 0.8%;
 background-color: #888888;
 }
 .volumeBar{

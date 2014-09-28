@@ -3,7 +3,7 @@ $(document).ready(function() {
 	//alert("ready");
 	var video = $('#video');
 
-	//video.on('click', function() { playpause(); } );
+	video.on('click', function() { playpause(); } );
 	$('.btnPlay').on('click', function() { playpause(); } );
 	$('.danmu').on('click', function() { playpause(); } );
 
@@ -119,4 +119,52 @@ $(document).ready(function() {
 		
 	};
 
+	var timeDrag = false;   /* Drag status */
+	$('.progressBar').on("mousedown", function(e) {
+		//alert("GG");
+		timeDrag = true;
+		updatebar(e.pageX);
+	});
+	$(document).on('mouseup', function(e) {
+		if(timeDrag) {
+			timeDrag = false;
+			updatebar(e.pageX);
+		}
+	});
+	$(document).on('mousemove', function(e) {
+		if(timeDrag) {
+			updatebar(e.pageX);
+		}
+	});
+	
+	var updatebar = function(x) {
+		var progress = $('.progressBar');
+		
+		//calculate drag position
+		//and update video currenttime
+		//as well as progress bar
+		var maxduration = video[0].duration;
+		var position = x - progress.offset().left;
+		var percentage = 100 * position / progress.width();
+		if(percentage > 100) {
+			percentage = 100;
+		}
+		if(percentage < 0) {
+			percentage = 0;
+		}
+		$('.timeBar').css('width',percentage+'%');	
+		video[0].currentTime = maxduration * percentage / 100;
+	};
+	//loop to get HTML5 video buffered data
+	var startBuffer = function() {
+  		var maxduration = video[0].duration;
+   		var currentBuffer = video[0].buffered.end(0);
+   		var percentage = 100 * currentBuffer / maxduration;
+   		$('.bufferBar').css('width', percentage+'%');
+ 
+   		if(currentBuffer < maxduration) {
+      		setTimeout(startBuffer, 500);
+   		}
+	};
+	setTimeout(startBuffer, 500);
 });

@@ -13,32 +13,9 @@
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-<style>
-.navbar .nav > li .dropdown-menu {
-	margin: 0;
-}
-.navbar .nav > li:hover .dropdown-menu {
-	display: block;
-}
-.carousel-indicators {
-	bottom: -400px;
-}
-.navbar-default {
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 5px rgba(0, 0, 0, 0.075);
-}
-body {
-	background-color:#eee;
-}
-.main {
-	margin-left:10%;
-	margin-right:10%;
-	margin-top: 45px;
-	margin-bottom: -11px;
-	min-height:2000px;
-	background-color:rgba(255, 255, 255, 0.64);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 5px rgba(0, 0, 0, 0.075);
-}
-</style>
+<!-- betaPlayer -->
+<script type="text/javascript" src="js/video.js"></script>
+<link rel="stylesheet" type="text/css" href="css/cover.css">
 </head>
 
 <body>
@@ -72,6 +49,30 @@ body {
 </div>
 <div class="main">
 <h1>Hello Wordl!</h1>
+<!-- player & command list-->
+<div style="height: 520px;">
+<div class="col-lg-8">
+<video id="video" preload="auto" onLoad="videoData()" width="100%" controls>
+<source src="http://beta.moe/video/%5bKTXP%5d%5bAldnoah.Zero%5d%5b02%5d%5bBIG5%5d%5b720p%5d.mp4">
+</video>
+<div class="control">
+<input type="hidden" id="video_dur">
+<input type="hidden" id="video_pos">
+<div class="btnPlay"><span class="glyphicon glyphicon-play playbtn"></span></div>
+<div class="progressBar">
+<div class="bufferBar"></div>
+<div class="timeBar"></div>
+</div>
+<div class="time">
+<span class="current"></span>/
+<span class="duration"></span>
+</div>
+<div class="sound"><span class="glyphicon glyphicon-volume-up soundbtn"></span></div>
+<div class="volume">
+<span class="volumeBar" style="width: 100%;"></span>
+</div>
+</div>
+<!-- /player & command list-->
 </div>
 </body>
 </html>

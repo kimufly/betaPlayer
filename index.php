@@ -52,7 +52,7 @@
 <!-- player & command list-->
 <div style="height: 520px;">
 <div class="col-lg-8">
-<video id="video" preload="auto" onLoad="videoData()" width="100%" controls>
+<video id="video" preload="auto" onLoad="videoData()" width="100%">
 <source src="http://beta.moe/video/%5bKTXP%5d%5bAldnoah.Zero%5d%5b02%5d%5bBIG5%5d%5b720p%5d.mp4">
 </video>
 <div class="control">

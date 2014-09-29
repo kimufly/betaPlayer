@@ -53,7 +53,7 @@
 <div style="height: 520px;">
 <div class="col-lg-8">
 <video id="video" preload="auto" onLoad="videoData()" width="100%">
-<source src="http://beta.moe/video/%5bKTXP%5d%5bAldnoah.Zero%5d%5b02%5d%5bBIG5%5d%5b720p%5d.mp4">
+<source src="video/K-ON!%202009%20-%20EP01%20%5bBD%201920x1080%2023.976fps%20AVC-yuv420p10%20FLACx3%20Chap%5d%20-%20mawen1250.webmhd.webm">
 </video>
 <div class="control">
 <input type="hidden" id="video_dur">

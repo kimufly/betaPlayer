@@ -1,5 +1,3 @@
 *.a
 *.out
-!.php
-!.html
-!.js
+video

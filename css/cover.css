@@ -59,6 +59,22 @@ body {
 	position: absolute;
 }
 
+.tm-list {
+	width: 16%;
+	text-align: center;
+}
+
+.cmd-list {
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.dt-list {
+	width: 27%;
+	text-align: left;
+
+}
+
 /*************
 **************/
 .control {

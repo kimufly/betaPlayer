@@ -82,6 +82,11 @@
 <div id="time">
 </div>
 </div>
+<table>
+<th>Time</th>
+<th>Command</th>
+<th>Date</th>
+</table>
 </div>
 </div>
 </div>

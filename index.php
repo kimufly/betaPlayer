@@ -7,8 +7,11 @@
 <!-- JQuery -->
 <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
 <!-- Mini Colors-->
-<script type="text/javascript" scr="js/jquery.minicolors.js"></script>
-<link rel="stylesheet" type="text/css" href="js/jquery.minicolors.css">
+<script type="text/javascript" scr="jquery-minicolors/jquery.minicolors.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery-minicolors/jquery.minicolors.css">
+
+<script type="text/javascript" src="colorpicker/jquery.ui.colorPicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="colorpicker/css/jquery.ui.colorPicker.css">
 <!-- Bootstrap -->
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -73,8 +76,12 @@
 <span class="volumeBar" style="width: 100%;"></span>
 </div>
 </div>
+
 </div>
 <!-- /player -->
+<!-- Command Input -->
+
+<!-- /Command Input -->
 <!-- command list -->
 <div class="commandList">
 <div class="display" style="height:1px"></div>
@@ -82,15 +89,15 @@
 <div id="time">
 </div>
 </div>
-<table>
-<th>Time</th>
-<th>Command</th>
-<th>Date</th>
+<table style="width: inherit;" id="head">
+<th class="tm-list">Time</th>
+<th class="cmd-list">Command</th>
+<th class="dt-list">Date</th>
 </table>
-</div>
-</div>
 </div>
 <!-- /player & command list-->
 </div>
+</div>
+
 </body>
 </html>

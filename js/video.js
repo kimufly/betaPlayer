@@ -196,4 +196,10 @@ $(document).ready(function() {
 		//alert('hello');
 		$('.list-header').css("display","none");
 	});
+	$('#head').mouseenter(function(){
+		$('th').css("background", "rgba(144, 227, 253, 0.48)")
+	});
+	$('#head').mouseleave(function(){
+		$('th').css("background", "rgba(0, 0, 0, 0.0)")
+	});
 });

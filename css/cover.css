@@ -14,6 +14,7 @@
 }
 body {
 	background-color:#eee;
+	min-width: 1906px;
 }
 .main {
 	margin-left:20%;
@@ -24,17 +25,46 @@ body {
 	background-color:rgba(255, 255, 255, 0.64);
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 5px rgba(0, 0, 0, 0.075);
 }
+
+.player_main {
+	width: 850px;
+	position: absolute;
+}
+
 .col-lg-8 {
 	padding-left:0;
 	padding-right:0;
 }
+
+.player_win {
+	height: 520px;
+	min-width: 1144px;
+}
+
+.commandList {
+	min-height: 445px;
+	position: relative;
+	width: 294px;
+	margin-left: 850px;
+	box-shadow: inset 0 1px 0 rgba(172, 160, 160, 0.15),0 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+.list-header {
+	border-color: #F0EEEE;
+	min-height: 78px;
+	display: none;
+	box-shadow: inset 0 1px 0 rgba(214, 214, 214, 0.15),0 1px 5px rgba(39, 39, 39, 0.58);
+}
+
+/*************
+**************/
 .control {
 background: #FFF;
 color: #919191;
-position: absolute;
-bottom: -15px;
+position: relative;
+bottom: 5px;
 height: 20px;
-width: 100%;
+width: 850px;
 border: 1px solid;
 }
 

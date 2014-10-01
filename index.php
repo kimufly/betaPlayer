@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="css/cover.css">
 </head>
 
-<body>
+<body onLoad="startTime()">
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -50,10 +50,11 @@
 <div class="main">
 <h1>Hello Wordl!</h1>
 <!-- player & command list-->
-<div style="height: 520px;">
-<div class="col-lg-8">
-<video id="video" preload="auto" onLoad="videoData()" width="100%">
-<source src="video/K-ON!%202009%20-%20EP01%20%5bBD%201920x1080%2023.976fps%20AVC-yuv420p10%20FLACx3%20Chap%5d%20-%20mawen1250.webmhd.webm">
+<div class="player_win">
+<!-- player -->
+<div class="player_main">
+<video id="video" preload="auto" onLoad="videoData()" width="850px">
+<source src="http://beta.moe/video/%5bKTXP%5d%5bAldnoah.Zero%5d%5b02%5d%5bBIG5%5d%5b720p%5d.mp4">
 </video>
 <div class="control">
 <input type="hidden" id="video_dur">
@@ -64,12 +65,24 @@
 <div class="timeBar"></div>
 </div>
 <div class="time">
-<span class="current"></span>/
+<span class="current"></span> /
 <span class="duration"></span>
 </div>
 <div class="sound"><span class="glyphicon glyphicon-volume-up soundbtn"></span></div>
 <div class="volume">
 <span class="volumeBar" style="width: 100%;"></span>
+</div>
+</div>
+</div>
+<!-- /player -->
+<!-- command list -->
+<div class="commandList">
+<div class="display" style="height:1px"></div>
+<div class="list-header">
+<div id="time">
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- /player & command list-->

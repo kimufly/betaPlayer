@@ -1,4 +1,24 @@
 // JavaScript Document
+
+//timer
+function startTime() {
+	var today=new Date();
+	var h=today.getHours();
+	var m=today.getMinutes();
+	var s=today.getSeconds();
+	m=checkTime(m);
+	s=checkTime(s);
+	document.getElementById('time').innerHTML=h+":"+m+":"+s;
+	t=setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i) {
+	if (i<10) {
+		i="0" + i;
+	}
+	return i;
+}
+/****************************/
 $(document).ready(function() {
 	//alert("ready");
 	var video = $('#video');
@@ -167,4 +187,13 @@ $(document).ready(function() {
    		}
 	};
 	setTimeout(startBuffer, 500);
+
+	$('.display').mouseenter(function(){
+		//alert('hello');
+		$('.list-header').css("display","block");
+	});
+	$('.list-header').mouseleave(function(){
+		//alert('hello');
+		$('.list-header').css("display","none");
+	});
 });

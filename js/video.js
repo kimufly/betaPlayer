@@ -202,4 +202,16 @@ $(document).ready(function() {
 	$('#head').mouseleave(function(){
 		$('th').css("background", "rgba(0, 0, 0, 0.0)")
 	});
+
+	$(function() {
+    $('#colorpicker-full').colorpicker({
+        parts:          'full',
+        alpha:          true,
+        showOn:         'both',
+        buttonColorize: true,
+        showNoneButton: true
+    });
+});
+
+
 });

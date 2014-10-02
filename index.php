@@ -1,17 +1,23 @@
 <!doctype html>
-<html>
-<head>
+<html><head>
 <meta charset="UTF-8">
 <title>betaPlayer</title>
 
 <!-- JQuery -->
 <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
-<!-- Mini Colors-->
-<script type="text/javascript" scr="jquery-minicolors/jquery.minicolors.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery-minicolors/jquery.minicolors.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
-<script type="text/javascript" src="colorpicker/jquery.ui.colorPicker.min.js"></script>
-<link rel="stylesheet" type="text/css" href="colorpicker/css/jquery.ui.colorPicker.css">
+
+<script type="text/javascript" src="colorpicker/jquery.colorpicker.js"></script>
+<link rel="stylesheet" type="text/css" href="colorpicker/jquery.colorpicker.css">
+
+<script type="text/javascript" src="colorpicker/i18n/jquery.ui.colorpicker-nl.js"></script>
+<script type="text/javascript" src="colorpicker/parts/jquery.ui.colorpicker-rgbslider.js"></script>
+<script type="text/javascript" src="colorpicker/parts/jquery.ui.colorpicker-memory.js"></script>
+
+
+
 <!-- Bootstrap -->
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -76,7 +82,7 @@
 <span class="volumeBar" style="width: 100%;"></span>
 </div>
 </div>
-
+<input type="text" id="colorpicker-full" value="fe9810">
 </div>
 <!-- /player -->
 <!-- Command Input -->

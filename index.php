@@ -82,7 +82,11 @@
 <span class="volumeBar" style="width: 100%;"></span>
 </div>
 </div>
-<input type="text" id="colorpicker-full" value="fe9810">
+<form action="index.php">
+<input type="hidden" id="colorpicker-full" value="FFF">
+<input type="text" style="width: 752px;">
+<input type="submit" value="发射>>">
+</form>
 </div>
 <!-- /player -->
 <!-- Command Input -->
